@@ -1,0 +1,101 @@
+body{background-color: black;
+box-sizing: border-box;
+padding: 40px;
+margin: 0;
+
+}   
+
+
+.cell{
+
+    width: 100%;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 20px;
+    z-index: 1;
+    overflow: hidden;
+    box-sizing: border-box;
+   box-shadow:  0px 0px 4px 1px  white;
+   background-color: lightblue;
+   
+}
+.gore{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+
+}
+img{ width: 100%;}
+
+.dolje{
+    height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.grid{
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) ;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 50px;
+  
+}
+.head
+{color:rgba(255,255,255,0.25);
+display: block;
+height: 15%;
+display: flex;
+justify-content: start;
+align-items: center;
+font-size: 24px;
+
+}
+
+.sve{
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+    ;
+    
+}
+@media (max-width: 480px) {
+    .grid{
+
+        display: grid;
+        grid-template-columns:  1fr;
+      
+        gap: 50px;
+    }
+  
+}
+@media (max-width: 480px) {
+        
+    
+    .head {color:rgba(255,255,255,0.25);
+        display: block;
+        height: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+    }}
+
+    @media (min-width: 481px) and (max-width: 767px)  {
+        .grid{
+    
+            display: grid;
+            grid-template-columns: repeat(3, 1fr) ;
+            grid-template-rows: auto;
+          
+            gap: 50px;
+        }
+      
+        }
+    
